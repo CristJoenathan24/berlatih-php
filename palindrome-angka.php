@@ -3,7 +3,7 @@
 function palindrome_angka($angka) {
     $a = $angka;
     
-    if($angka >= 0 && $angka<10){
+    if($angka >= 0 && $angka<9){
         echo $angka+1 . "<br>";
     }else{
         while(true){
