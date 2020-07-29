@@ -9,16 +9,12 @@ function palindrome_angka($angka) {
         while(true){
             $strOri = strval($a);
             $str = strval($a);
-            // echo $a . "<br>";
             for($i = strlen($str)-1, $j = 0; $j < $i ; $i-- , $j++ ){
                 $temp = $str[$i];
                 $str[$i] = $str[$j];
                 $str[$j] = $temp;
             }
-            // echo $str;
-            // echo $str . "<br>";
             $buff = strcmp($strOri,$str);
-            // echo $buff . "<br>";
 
             if($buff == 0){
                 echo $strOri . "<br>";
